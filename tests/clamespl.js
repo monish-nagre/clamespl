@@ -24,9 +24,9 @@ const main = async() => {
   let account = await program.account.baseAccount.fetch(baseAccount.publicKey);
   console.log('👀 GIF Count', account.totalAdd.toString());
 
-
-  const newUserPublicKey = new PublicKey("38J8f4VG8syxqWmRsYt8pbFf8Edeh1hoPvAuBnF4Vp6U"); 
-  const nonWhitelisted = new PublicKey("6GacZCa8BsmQDcagkAK8wSF24x2EpGHkX1cuHUGEA9jj");
+ // solana config set address here: newUserPublicKey 
+  const newUserPublicKey = new PublicKey("terminal wallet address");
+  const nonWhitelisted = new PublicKey("any-address phantom");
 
   // passing address :- whitelidt address
   await program.rpc.addAddress(new anchor.BN(10**9*90),newUserPublicKey, {
